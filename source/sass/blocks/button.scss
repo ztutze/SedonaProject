@@ -1,0 +1,36 @@
+.button {
+  font-family: $main-font;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: $text-white;
+  background-color: $color-accent;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  border: none;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $button-hover;
+  }
+
+  &:focus {
+    background-color: $button-hover;
+  }
+
+  &:active {
+    color: rgba($text-white, 0.3);
+    background-color: $button-active;
+  }
+
+  &:disabled {
+    background-color: $lighter-grey;
+  }
+
+}
+
+.button.button--disabled {
+  background-color: $lighter-grey;
+  cursor: default;
+}
