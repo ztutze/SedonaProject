@@ -10,6 +10,14 @@ $button-hover: #669EC0;
 $button-active: #5496BD;
 $advantages-bg-accent: #81B3D2;
 $advantages-bg-secondary:#eeeeee;
+$advantages-bg-essential:#ffffff;
 
 // Fonts
 $main-font: "PT sans", "Arial", sans-serif;
+
+// Mixins
+@mixin link {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+}

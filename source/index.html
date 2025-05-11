@@ -11,31 +11,31 @@
   <div class="page__body-wrapper">
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo logo" href="#">
-          <img src="img/logotyle-mobile.svg" alt="Логотип" width="101.7" height="84">
-        </a>
-        <nav class="main-nav">
-          <button class="main-nav__toggle" type="button">
-            <span class="visually-hidden">Открыть меню</span>
-          </button>
-          <div class="main-nav__wrapper">
-            <ul class="main-nav__list">
-              <li class="main-nav__item">
-                <a href="#">Главная</a>
+        <nav class="main-nav page-header__main-nav">
+          <div class="main-nav__wrapper ">
+            <ul class="main-nav__list nav-list">
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">Главная</a>
               </li>
-              <li class="main-nav__item">
-                <a href="catalog.html">Фото и видео</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="catalog.html">Фото и видео</a>
               </li>
-              <li class="main-nav__item">
-                <a href="form.html">Форма отзыва</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="form.html">Форма отзыва</a>
               </li>
-              <li class="main-nav__item">
-                <a href="#">HTML Academy</a>
+              <li class="nav-list__item">
+                <a class="nav-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
+            <a class="main-nav__logo logo" href="#">
+              <img class="logo__img" src="img/logotyle-mobile.svg" alt="Логотип" width="101.7" height="84">
+            </a>
+            <button class="nav-list__close" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
           </div>
-          <button class="main-nav__close" type="button">
-            <span class="visually-hidden">Закрыть меню</span>
+          <button class="main-nav__button" type="button">
+            <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
       </div>
@@ -43,35 +43,48 @@
     <main class="page-main">
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
-        <div class="promo">
-          <p class="promo__slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
-          <p class="promo__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+        <div class="page-main__intro intro">
+          <div class="intro__img-wrapper">
+            <img class="intro__img" src="img/sedona-bg-small.jpg" width="320" height="389" alt="">
+          </div>
+          <div class="intro__info">
+            <p class="intro__slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
+            <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+          </div>
         </div>
-        <section class="advantages">
+        <section class="page-main__advanages advantages">
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
             <ul class="advantages__list">
-              <li class="advantages__item info-card">
-                <p class="info-card__title">Настоящий городок</p>
-                <p class="info-card__number">№1</p>
-                <p class="info-card__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
+              <li class="advantages__item info-card info-card--accent">
+                <div class="info-card__content">
+                  <p class="info-card__title">Настоящий городок</p>
+                  <p class="info-card__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
+                </div>
+                <div class="info-card__img">
+                  <img src="img/photo-city@1x 1.jpg" width="320" height="260" alt="">
+                </div>
               </li>
-              <li class="advantages__item info-card info-card--addition">
+              <li class="advantages__item info-card info-card--essential">
                 <p class="info-card__title">Жилье</p>
                 <p class="info-card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item info-card info-card--addition">
+              <li class="advantages__item info-card info-card--essential">
                 <p class="info-card__title">Еда</p>
                 <p class="info-card__text">Всегда заказывайте фирменный бургер,<br>Вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item info-card info-card--addition">
+              <li class="advantages__item info-card info-card--essential">
                 <p class="info-card__title">Сувениры</p>
                 <p class="info-card__text">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="advantages__item info-card">
-                <p class="info-card__title">Там есть мост дьявола</p>
-                <p class="info-card__number">№2</p>
-                <p class="info-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <li class="advantages__item info-card info-card--accent">
+                <div class="info-card__content">
+                  <p class="info-card__title">Там есть мост дьявола</p>
+                  <p class="info-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+                </div>
+                <div class="info-card__img">
+                  <img src="img/photo-bridge@1x 1.jpg" width="320" height="260" alt="">
+                </div>
               </li>
               <li class="advantages__item info-card">
                 <p class="info-card__title">Небольшая площадь</p>
@@ -91,7 +104,7 @@
             </ul>
           </div>
         </section>
-        <section class="find-hotel">
+        <section class="page-main__find-hotel find-hotel">
           <div class="find-hotel__wrapper">
             <h2 class="visually-hidden">Найти гостиницу</h2>
             <p class="find-hotel__title">Заинтересовались?</p>

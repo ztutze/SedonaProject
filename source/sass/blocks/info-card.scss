@@ -1,0 +1,40 @@
+.info-card {
+  text-align: center;
+  background-color: $advantages-bg-secondary;
+}
+
+.info-card--accent {
+  color: $text-white;
+  background-color: $advantages-bg-accent;
+}
+
+.info-card--accent .info-card__title {
+  padding-top: 39px;
+}
+
+.info-card--accent .info-card__text {
+  margin-top: 39px;
+  padding-bottom: 39px;
+}
+
+.info-card--essential {
+  text-align: left;
+  color: $text-black;
+  background-color: $advantages-bg-essential;
+}
+
+.info-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+}
+
+.info-card__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}
