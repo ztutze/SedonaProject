@@ -1,0 +1,18 @@
+.photo-card {
+  color: $text-black;
+  font-size: 14px;
+}
+
+.photo-card__title {
+  text-transform: uppercase;
+  font-weight: 700;
+
+}
+
+.photo-card__author {
+  color: $text-grey;
+}
+
+.photo-card__like-counter {
+  font-weight: 700;
+}
