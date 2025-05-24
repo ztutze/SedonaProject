@@ -1,0 +1,49 @@
+.advantages-card {
+  text-align: center;
+  background-color: $advantages-bg-secondary;
+}
+
+.advantages-card--accent {
+  color: $text-white;
+  background-color: $advantages-bg-accent;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+  }
+}
+
+.advantages-card__content {
+  grid-column: 1 / 2;
+}
+
+.advantages-card--accent .advantages-card__title {
+  padding-top: 39px;
+}
+
+.advantages-card--accent .advantages-card__text {
+  margin-top: 39px;
+  padding-bottom: 39px;
+}
+
+.advantages-card--essential {
+  text-align: left;
+  color: $text-black;
+  background-color: $advantages-bg-essential;
+}
+
+.advantages-card__title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+  padding-top: 26px;
+}
+
+.advantages-card__text {
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  padding: 0;
+}

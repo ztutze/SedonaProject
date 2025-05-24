@@ -1,3 +1,22 @@
-body {
-  background-color: mistyrose;
-}
+@import "global/variables.scss";
+@import "global/fonts.scss";
+@import "global/global.scss";
+@import "blocks/page.scss";
+@import "blocks/button.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-main.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/nav-list.scss";
+@import "blocks/intro.scss";
+@import "blocks/gallery.scss";
+@import "blocks/form.scss";
+@import "blocks/input.scss";
+@import "blocks/advantages.scss";
+@import "blocks/advantages-card.scss";
+@import "blocks/photo-card.scss";
+@import "blocks/video-card.scss";
+@import "blocks/search-hotel.scss";
+@import "blocks/map.scss";
+@import "blocks/copyright.scss";
+@import "blocks/socials.scss";
