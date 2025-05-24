@@ -1,0 +1,16 @@
+.advantages__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.advantages__item--big {
+  @media (min-width: $medium-width) {
+    grid-column: 1/-1;
+  }
+}

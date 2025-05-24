@@ -27,11 +27,9 @@
   &:disabled {
     background-color: $lighter-grey;
   }
-
 }
 
 .button.button--disabled {
   background-color: $lighter-grey;
   cursor: default;
 }
-

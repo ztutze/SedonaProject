@@ -9,10 +9,9 @@
 </head>
 <body class="page__body">
   <div class="page__body-wrapper">
-    <header class="page-header">
-      <div class="page-header__wrapper">
-        <nav class="main-nav page-header__main-nav">
-          <div class="main-nav__wrapper ">
+    <header class="page-header page__header">
+        <nav class="main-nav">
+          <div class="main-nav__wrapper">
             <ul class="main-nav__list nav-list">
               <li class="nav-list__item">
                 <a class="nav-list__link" href="#">Главная</a>
@@ -27,18 +26,14 @@
                 <a class="nav-list__link" href="#">HTML Academy</a>
               </li>
             </ul>
-            <a class="main-nav__logo logo" href="#">
-              <img class="logo__img" src="img/logotyle-mobile.svg" alt="Логотип" width="101.7" height="84">
-            </a>
-            <button class="nav-list__close" type="button">
-              <span class="visually-hidden">Закрыть меню</span>
-            </button>
           </div>
+          <a class="main-nav__logo logo" href="#">
+            <img class="logo__img" src="img/logotyle-mobile.svg" alt="Логотип" width="101.7" height="84">
+          </a>
           <button class="main-nav__button" type="button">
             <span class="visually-hidden">Открыть меню</span>
           </button>
         </nav>
-      </div>
     </header>
     <main class="page-main">
       <div class="page-main__wrapper">
@@ -52,76 +47,75 @@
             <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
           </div>
         </div>
-        <section class="page-main__advanages advantages">
+        <section class="page-main__advantages advantages">
           <div class="advantages__wrapper">
             <h2 class="visually-hidden">Преимущества Седоны</h2>
             <ul class="advantages__list">
-              <li class="advantages__item info-card info-card--accent">
-                <div class="info-card__content">
-                  <p class="info-card__title">Настоящий городок</p>
-                  <p class="info-card__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
+              <li class="advantages__item advantages__item--big advantages-card advantages-card--accent">
+                <div class="advantages-card__content">
+                  <p class="advantages-card__title">Настоящий городок</p>
+                  <p class="advantages-card__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
                 </div>
-                <div class="info-card__img">
+                <div class="advantages-card__img">
                   <img src="img/photo-city@1x 1.jpg" width="320" height="260" alt="">
                 </div>
               </li>
-              <li class="advantages__item info-card info-card--essential">
-                <p class="info-card__title">Жилье</p>
-                <p class="info-card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+              <li class="advantages__item advantages-card advantages-card--essential">
+                <p class="advantages-card__title">Жилье</p>
+                <p class="advantages-card__text">Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
               </li>
-              <li class="advantages__item info-card info-card--essential">
-                <p class="info-card__title">Еда</p>
-                <p class="info-card__text">Всегда заказывайте фирменный бургер,<br>Вы не разочаруетесь!</p>
+              <li class="advantages__item advantages-card advantages-card--essential">
+                <p class="advantages-card__title">Еда</p>
+                <p class="advantages-card__text">Всегда заказывайте фирменный бургер,<br>Вы не разочаруетесь!</p>
               </li>
-              <li class="advantages__item info-card info-card--essential">
-                <p class="info-card__title">Сувениры</p>
-                <p class="info-card__text">Не только китайского, но и местного производства!</p>
+              <li class="advantages__item advantages-card advantages-card--essential">
+                <p class="advantages-card__title">Сувениры</p>
+                <p class="advantages-card__text">Не только китайского, но и местного производства!</p>
               </li>
-              <li class="advantages__item info-card info-card--accent">
-                <div class="info-card__content">
-                  <p class="info-card__title">Там есть мост дьявола</p>
-                  <p class="info-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
+              <li class="advantages__item advantages__item--big advantages-card advantages-card--accent">
+                <div class="advantages-card__content">
+                  <p class="advantages-card__title">Там есть мост дьявола</p>
+                  <p class="advantages-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <div class="info-card__img">
+                <div class="advantages-card__img">
                   <img src="img/photo-bridge@1x 1.jpg" width="320" height="260" alt="">
                 </div>
               </li>
-              <li class="advantages__item info-card">
-                <p class="info-card__title">Небольшая площадь</p>
-                <p class="info-card__number">№3</p>
-                <p class="info-card__text">Все интересные места находятся очень близко</p>
+              <li class="advantages__item advantages-card">
+                <p class="advantages-card__title">Небольшая площадь</p>
+                <p class="advantages-card__number">№3</p>
+                <p class="advantages-card__text">Все интересные места находятся очень близко</p>
               </li>
-              <li class="advantages__item info-card">
-                <p class="info-card__title">Красивая дорога</p>
-                <p class="info-card__number">№4</p>
-                <p class="info-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+              <li class="advantages__item advantages-card">
+                <p class="advantages-card__title">Красивая дорога</p>
+                <p class="advantages-card__number">№4</p>
+                <p class="advantages-card__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
               </li>
-              <li class="advantages__item info-card">
-                <p class="info-card__title">Мало туристов</p>
-                <p class="info-card__number">№5</p>
-                <p class="info-card__text">Большинство едет в Гранд каньон и толпиться там</p>
+              <li class="advantages__item advantages-card">
+                <p class="advantages-card__title">Мало туристов</p>
+                <p class="advantages-card__number">№5</p>
+                <p class="advantages-card__text">Большинство едет в Гранд каньон и толпиться там</p>
               </li>
             </ul>
           </div>
         </section>
-        <section class="page-main__find-hotel find-hotel">
-          <div class="find-hotel__wrapper">
-            <h2 class="visually-hidden">Найти гостиницу</h2>
-            <p class="find-hotel__title">Заинтересовались?</p>
-            <p class="find-hotel__text">
-              Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
-            </p>
-            <a class="button find-hotel__button button--find-hotel" href="#">Найти гостиницу</a>
-            <div class="find-hotel__map map">
-              <img src="img/map-mobile.png" alt="Карта с расположением Седоны">
+        <section class="page-main__search-hotel search-hotel">
+            <div class="search-hotel__info-group">
+              <h2 class="visually-hidden">Найти гостиницу</h2>
+              <p class="search-hotel__title">Заинтересовались?</p>
+              <p class="search-hotel__text">
+                Укажите предполагаемые даты поездки,<br>и мы покажем вам лучшие предложения гостиниц в седоне
+              </p>
+              <a class="button search-hotel__button button--search-hotel" href="#">Найти гостиницу</a>
             </div>
+          <div class="search-hotel__map map">
+            <img class="map__img" src="img/map-mobile.png" alt="Карта с расположением Седоны">
           </div>
         </section>
       </div>
     </main>
-    <footer class="page-footer">
-      <div class="page-footer__wrapper">
-        <p class="page-footer__hashtag">#VisitSedona</p>
+    <footer class="page-footer page-footer__wrapper">
+        <a class="page-footer__hashtag" href="#">#VisitSedona</a>
         <ul class="page-footer__socials socials">
           <li class="socials__item">
             <a href="#">
@@ -139,10 +133,12 @@
             </a>
           </li>
         </ul>
-        <p class="page-footer__copyright">Разработано</p>
-        <img src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="26.9" height="34.1">
-      </div>
-
+        <div class="page-footer__copyright copyright">
+          <a class="copyright__link" href="https://up.htmlacademy.ru/profession/frontender-lite/1/lite-adaptive/1">
+            <p class="copyright__text">Разработано</p>
+            <img class="copyright__icon" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="26.9" height="34.1">
+          </a>
+        </div>
     </footer>
   </div>
 </body>
