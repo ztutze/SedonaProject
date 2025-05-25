@@ -6,13 +6,23 @@
 }
 
 .page__body {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-rows: min-content 1fr min-content;
   min-width: 320px;
   height: 100%;
   margin: 0;
   padding: 0;
+
+  @media (min-width: $big-width) {
+    background-color: #f2f2f2;
+  }
+}
+
+.page__body-wrapper {
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background-color: $page-bg;
 }
 
 .page__header {

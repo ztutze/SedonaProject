@@ -22,6 +22,16 @@
   }
 }
 
+.intro__img-wrapper--inner {
+  &::before {
+    content: "";
+    position: absolute;
+    width: 229px;
+    height: 39px;
+    background-image: url("../img/intro-text-inner.png");
+  }
+}
+
 
 .intro__img {
   display: block;
@@ -36,6 +46,7 @@
   flex-wrap: wrap;
   line-height: 26px;
   text-align: center;
+  padding: 0 20px;
 }
 
 .intro__slogan {
@@ -48,4 +59,6 @@
 .intro__text {
   font-size: 14px;
   color: $text-grey;
+  // text-wrap: balance;
+  text-wrap: pretty;
 }
