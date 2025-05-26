@@ -1,31 +1,70 @@
+.form__wrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+  }
+}
 
 .form__group {
-  position: relative;
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
   padding-bottom: 25px;
   border: none;
 
-  // &::before {
-  //   content: "";
-  //   position: absolute;
-  //   width: 100%;
-  //   height: 1px;
-  //   top: -56px;
-  //   background-color: $lighter-grey;
-  // }
+  &:first-child {
+    grid-row: 3/4;
+
+    @media (min-width: $medium-width) {
+      grid-row: 1/2;
+      grid-column: 1/2;
+    }
+  }
+
+  &:nth-child(3) {
+    @media (min-width: $medium-width) {
+      grid-column: 1/-1;
+    }
+
+    @media (min-width: $big-width) {
+      display: flex;
+    }
+  }
+
+  &:nth-child(4) {
+    @media (min-width: $medium-width) {
+      grid-column: 1/-1;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: $big-width) {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+
+  &:nth-child(5) {
+    @media (min-width: $medium-width) {
+      grid-column: 1/-1;
+    }
+  }
 }
 
 .form__item {
-  display: grid;
-  grid-template-columns: auto 1fr;
-  align-items: center;
   margin-bottom: 20px;
 
   &:last-of-type {
     margin-bottom: 0;
   }
+}
+
+.form__item--simple {
+  display: flex;
+  gap: 10px;
+  align-items: center;
 }
 
 .form__item--vertical {
@@ -69,16 +108,37 @@
 }
 
 .form__input {
+  width: 100%;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 700;
+  background-color: #f2f2f2;
+  border: none;
+
+  &::placeholder {
+    color: $text-black;
+  }
+
+  padding-left: 20px;
   min-height: 58px;
 }
 
 .form__textarea {
+  width: 280px;
   font-size: 18px;
   line-height: 26px;
   font-weight: 700;
   color: $text-black;
   border: none;
   background-color: $input-bg;
+
+  @media (min-width: $medium-width) {
+    width: 648px;
+  }
+
+  @media (min-width: $big-width) {
+    width: 960px;
+  }
 
   &::placeholder {
     color: $text-black;
