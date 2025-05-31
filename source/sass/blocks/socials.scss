@@ -9,5 +9,44 @@
 .socials__item {
   width: 46px;
   height: 48px;
+}
+
+.socials__link {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
   background-color: $color-accent;
+}
+
+.socials__icon {
+  width: 80%;
+  height: 80%;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.socials__icon--twitter {
+  background-image: url("../img/twitter.svg");
+}
+
+.socials__icon--facebook {
+  background-image: url("../img/facebook.svg");
+}
+
+.socials__icon--youtube {
+  background-image: url("../img/youtube.svg");
+}
+
+.socials__link:hover,
+.socials__link:focus-visible {
+  background-color: $button-hover;
+}
+
+.socials__link:active {
+  background-color: $button-active;
+
+  .socials__icon {
+    opacity: 0.3;
+  }
 }
