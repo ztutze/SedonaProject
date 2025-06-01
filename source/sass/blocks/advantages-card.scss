@@ -63,7 +63,7 @@
     background-repeat: no-repeat;
     background-size: 100% 100%;
 
-    @media (min-width:$medium-width) {
+    @media (min-width: $medium-width) {
       grid-column: 1 / -1;
       justify-self: center;
     }
@@ -76,12 +76,11 @@
     height: 37px;
     background-image: url("../img/icon-house.svg");
 
-    @media (min-width:$medium-width) {
+    @media (min-width: $medium-width) {
       width: 75px;
       height: 72px;
     }
   }
-
 }
 
 .advantages-card--essential-food {
@@ -90,12 +89,11 @@
     height: 38px;
     background-image: url("../img/icon-burger.svg");
 
-    @media (min-width:$medium-width) {
+    @media (min-width: $medium-width) {
       width: 76px;
       height: 68px;
     }
   }
-
 }
 
 .advantages-card--essential-souvenirs {
@@ -104,12 +102,11 @@
     height: 35px;
     background-image: url("../img/icon-gift.svg");
 
-    @media (min-width:$medium-width) {
+    @media (min-width: $medium-width) {
       width: 64px;
       height: 75px;
     }
   }
-
 }
 
 .advantages-card__content {
@@ -139,7 +136,7 @@
 .advantages-card:last-child .advantages-card__content {
   &::after {
     display: none;
-    }
+  }
 }
 
 .advantages-card--accent-reversed .advantages-card__content {
@@ -213,8 +210,6 @@
 .advantages-card--accent .advantages-card__text {
   padding-bottom: 9px;
 }
-
-
 
 .advantages-card--essential .advantages-card__title,
 .advantages-card--essential .advantages-card__text {

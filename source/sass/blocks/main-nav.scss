@@ -9,6 +9,7 @@
 }
 
 .main-nav__wrapper {
+  position: relative;
   grid-column: 1/-1;
 
   @media (min-width: $medium-width) {
@@ -51,8 +52,29 @@
   background-color: transparent;
   background-repeat: no-repeat;
   background-image: url("/img/burger-menu.svg");
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:focus-visible {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 
   @media (min-width: $medium-width) {
     display: none;
   }
+}
+
+.main-nav__close {
+  position: absolute;
+  top: 17px;
+  right: 17px;
+  margin: 0;
+  padding: 5px;
 }
