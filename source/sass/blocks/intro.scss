@@ -20,6 +20,15 @@
     background-image: url("../img/intro-img-text.png");
     background-repeat: no-repeat;
   }
+
+  &::after {
+    content: "";
+    align-self: end;
+    height: 57px;
+    margin-top: -56px;
+    background-image: url("../img/intro-triangle.png");
+    background-repeat: no-repeat;
+  }
 }
 
 .intro__img-wrapper--inner {
@@ -52,7 +61,7 @@
 .intro__slogan {
   font-weight: 700;
   font-size: 18px;
-  margin-bottom: 44px;
+  margin-bottom: 35px;
   text-wrap: balance;
 }
 
@@ -60,5 +69,7 @@
   font-size: 14px;
   color: $text-grey;
   // text-wrap: balance;
+  margin: 0;
+  padding: 0;
   text-wrap: pretty;
 }

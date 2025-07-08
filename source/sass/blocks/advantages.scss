@@ -9,8 +9,25 @@
   }
 }
 
+.advantages__item {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
 .advantages__item--big {
   @media (min-width: $medium-width) {
     grid-column: 1/-1;
+  }
+}
+
+.advantages__item--essentials {
+  padding-top: 9px;
+  padding-bottom: 9px;
+  align-items: start;
+
+  @media (min-width: $medium-width) {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
   }
 }

@@ -57,11 +57,8 @@
     background-color: $button-hover;
   }
 
-  &:focus {
-    background-color: $button-hover;
-  }
-
   &:focus-visible {
+    background-color: $button-hover;
     outline-color: $lighter-grey;
   }
 
@@ -80,5 +77,35 @@
     line-height: 26px;
     background-color: transparent;
     color: $text-black;
+
+    &:hover {
+      background-color: transparent;
+      color: $button-hover;
+    }
+
+    &:focus-visible {
+      background-color: transparent;
+      color: $button-hover;
+    }
+
+    &:active {
+      color: rgba($text-black, 0.3);
+    }
+
+    &--current {
+      color: $light-brown;
+
+      &:hover {
+        color: $darker-brown;
+      }
+
+      &:focus-visible {
+        color: $darker-brown;
+      }
+
+      &:active {
+        color: rgba($light-brown, 0.3);
+      }
+    }
   }
 }
