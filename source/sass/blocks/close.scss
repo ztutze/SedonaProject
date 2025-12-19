@@ -5,6 +5,7 @@
   align-items: center;
   background-color: transparent;
   cursor: pointer;
+
   @media (min-width: $medium-width) {
     display: none;
   }

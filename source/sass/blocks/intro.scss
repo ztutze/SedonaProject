@@ -19,6 +19,12 @@
     transform: translate(-50%, -50%);
     background-image: url("../img/intro-img-text.png");
     background-repeat: no-repeat;
+
+    @media (min-width: 920px) {
+      width: 461px;
+      height: 350px;
+      background-image: url("../img/intro-text-inner-big.svg");
+    }
   }
 
   &::after {
@@ -26,21 +32,11 @@
     align-self: end;
     height: 57px;
     margin-top: -56px;
-    background-image: url("../img/intro-triangle.png");
+    background-image: url("../img/intro-triangle.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
-
-.intro__img-wrapper--inner {
-  &::before {
-    content: "";
-    position: absolute;
-    width: 229px;
-    height: 39px;
-    background-image: url("../img/intro-text-inner.png");
-  }
-}
-
 
 .intro__img {
   display: block;

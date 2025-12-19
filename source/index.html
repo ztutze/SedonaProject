@@ -10,6 +10,7 @@
 </head>
 
 <body class="page__body">
+
   <div class="page__body-wrapper">
     <header class="page-header page__header">
       <nav class="main-nav main-nav--nojs">
@@ -45,9 +46,13 @@
       <div class="page-main__wrapper">
         <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
         <div class="page-main__intro intro">
-          <div class="intro__img-wrapper">
-            <img class="intro__img" src="img/sedona-bg-small.jpg" width="320" height="389" alt="">
-          </div>
+          <picture class="intro__img-wrapper">
+            <source srcset="img/sedona-bg.jpg" media="(min-width: 600px)" width="1200" height="518">
+            <source srcset="img/sedona-bg@2x.jpg" media="(min-resolution: 2dppx, min-width:600px) " width="1200"
+              height="518">
+            <img class="intro__img" src="img/sedona-bg-small.jpg" srcset="img/sedona-bg-small@2x.jpg 2x" width="320"
+              height="389" alt="">
+          </picture>
           <div class="intro__info">
             <p class="intro__slogan">Седона — небольшой городок в Аризоне,<br> заслуживающий большего!</p>
             <p class="intro__text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
@@ -63,9 +68,15 @@
                   <span class="advantages-card__number">— №1 —</span>
                   <p class="advantages-card__text">Седона не аттракцион для туристов, там течет своя жизнь.</p>
                 </div>
-                <div class="advantages-card__img">
-                  <img src="img/photo-city@1x 1.jpg" width="320" height="260" alt="">
-                </div>
+                <picture class="advantages-card__img">
+                  <source srcset="img/photo-city-big@1x.jpg" media="(min-width: 1200px)" width="800" height="256">
+                  <source srcset="img/photo-city-big@2x.jpg" media="(min-resolution: 2dppx, min-width: 1200px)"
+                    width="800" height="256">
+                  <source srcset="img/photo-city-m@1x.jpg" media="(min-width: 600px)" width="800" height="256">
+                  <source srcset="img/photo-city-m@2x.jpg" media="(min-resolution: 2dppx, min-width: 600px)" width="800"
+                    height="256">
+                  <img src="img/photo-city@1x.jpg" srcset="img/photo-city@2x.jpg 2x" width="320" height="260" alt="">
+                </picture>
               </li>
               <li class="advantages__item advantages__item--big advantages__item--essentials">
                 <div class="advantages-card advantages-card--essential advantages-card--essential-house">
@@ -81,15 +92,23 @@
                   <p class="advantages-card__text">Не только китайского, но и местного производства!</p>
                 </div>
               </li>
-              <li class="advantages__item advantages__item--big advantages-card advantages-card--accent advantages-card--accent-reversed">
+              <li
+                class="advantages__item advantages__item--big advantages-card advantages-card--accent advantages-card--accent-reversed">
                 <div class="advantages-card__content">
                   <p class="advantages-card__title">Там есть мост дьявола</p>
                   <span class="advantages-card__number">— №3 —</span>
                   <p class="advantages-card__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <div class="advantages-card__img">
-                  <img src="img/photo-bridge@1x 1.jpg" width="320" height="260" alt="">
-                </div>
+                <picture class="advantages-card__img">
+                  <source srcset="img/photo-bridge-b@1x.jpg" media="(min-width: 1200px)" width="800" height="256">
+                  <source srcset="img/photo-bridge-b@2x.jpg" media="(min-resolution: 2dppx, min-width: 1200px)"
+                    width="800" height="256">
+                  <source srcset="img/photo-bridge-m@1x.jpg" media="(min-width: 600px)" width="800" height="256">
+                  <source srcset="img/photo-bridge-m@2x.jpg" media="(min-resolution: 2dppx, min-width: 600px)"
+                    width="800" height="256">
+                  <img src="img/photo-bridge@1x.jpg" srcset="img/photo-bridge@2x.jpg 2x" width="320" height="260"
+                    alt="">
+                </picture>
               </li>
               <li class="advantages__item advantages-card">
                 <div class="advantages-card__content">
@@ -124,9 +143,15 @@
             </p>
             <a class="button search-hotel__button button--search-hotel" href="#">Найти гостиницу</a>
           </div>
-          <div class="search-hotel__map map">
-            <img class="map__img" src="img/map-mobile.png" alt="Карта с расположением Седоны">
-          </div>
+          <picture class="search-hotel__map map">
+            <source srcset="img/map-desktop.png" media="(min-width: 1200px)" width="1200" height="350">
+            <source srcset="img/map-desktop@2x.png" media="(min-resolution: 2dppx, min-width: 1200px)" width="1200"
+              height="350">
+            <source srcset="img/map-tablet.png" media="(min-width: 600px)" width="768" height="350">
+            <source srcset="img/map-tablet@2x.png" media="(min-resolution: 2dppx, min-width: 600px)" width="768"
+              height="350">
+            <img class="map__img" src="img/map-mobile.png" srcset="img/map-mobile@2x.png 2x" width="320" height="350" alt="Карта с расположением Седоны">
+          </picture>
         </section>
       </div>
     </main>
@@ -160,6 +185,7 @@
       </div>
     </footer>
   </div>
+
   <script src="js/main-nav.js"></script>
 </body>
 
